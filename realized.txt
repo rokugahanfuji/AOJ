@@ -1,0 +1,24 @@
+%W 配列生成
+%記法において、カッコ内は #{変数}で変数を用いる
+puts %W(#{left} x #{right} = #{left * right}).join
+
+sort{|a, b| block } 標準では昇順　
+array.sort!{|a,b| b<=>a}
+降順降順にするには、array.sort!{|a,b| (-1)* a<=>b}　という手もある
+
+map(&:to_i) string配列をint配列に
+&はblock -> Procにするため、:はシンボル？
+
+gets 
+getsは入力をそのままStringに。gets.splitで空白で配列(String）となる
+Stringは"\n"が末尾にある
+
+to_i to_f to_s
+int float string
+
+rational
+有理数を扱う扱うクラス
+
+chomp
+文字列の末尾の改行文字を取り除いた新しい文字列を返します。
+getsの文字列は"abc\n"となっているため、取り除くことが出来る。
